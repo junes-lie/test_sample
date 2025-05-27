@@ -41,6 +41,131 @@
   min-height: 64rem;
 }
 
+/* 최신식 장비 둘러보기 */
+/* .equipment-sec */
+
+.swiper02{
+  overflow: hidden;
+}
+
+.equipment-sec{
+  padding: 8rem 0;
+  position: relative; /* 위치 잡아야 swiper-button-next나타남 */
+}
+.swiper-button-prev:after{
+    margin-left: 100px;
+}
+.swiper-button-next:after {
+  margin-right: 100px;
+}
+  
+.equipment-sec .container-wrap{
+  overflow: hidden;
+}
+  
+.equipment-sec .container-wrap h3{
+  font-size: 2.4rem;
+  margin: 2rem 0 1rem;
+}
+
+.equipment-sec .container-wrap p{
+  font-size: 1.8rem;
+}
+
+.swiper02 .swiper-slide{
+  flex-direction: column;
+}
+
+/* examination-sec */
+.examination-sec{
+  padding: 8rem 0;
+}
+
+.examination-sec .examination-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.examination-sec .examination-wrap .examination-item{
+  width: 30%;
+  text-align: center;
+}
+.examination-sec .examination-wrap .examination-item p{
+  font-size: 2rem;
+}
+  
+.examination-sec .examination-wrap .examination-item .ev_hover{
+  display: none;
+}
+.examination-sec .examination-wrap .examination-item:hover img{
+  display: none;
+}
+.examination-sec .examination-wrap .examination-item:hover img.ev_hover{
+  display: inline-block;
+}
+
+/* tour-swiper */
+.tour-swiper{
+  display: flex;
+  align-items: center;
+  padding-bottom: 8rem;
+}
+.mySwiper4{
+  width: 50%;
+}
+.mySwiper3{
+  width: 50%;
+  padding-left: 10rem;
+}
+.tour-sec .tour-wrap h2{
+  position: relative;
+}
+.tour-sec .tour-wrap h2::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 4rem;
+  height: 1px;
+  background: #333;
+}
+.tour-sec .tour-wrap h2 span{
+  font-weight: 400;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.tour-sec .tour-wrap p{
+  font-size: 2rem;
+  margin-bottom: 8rem;
+}
+
+.tour-sec .tour-wrap .btn{
+  margin-bottom: 8rem;
+}
+
+.tour-swiper .swiper-slide img{
+  max-height: 85rem;
+}
+
+.mySwiper3 .swiper-slide img{
+  max-height: 10rem;
+}
+
+.mySwiper3 .swiper-slide{
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper3 .swiper-slide-thumb-active{
+  opacity: 1;
+}
+
 @media (max-width:1440px){ /* 노트북 */
   
 }
@@ -63,6 +188,9 @@
   .main-visual .swiper-slide{
     height: 50rem;
   }
+  .examination-sec .examination-wrap .examination-item p{
+    font-size: 1.6rem;
+  }
 }
 
 @media (max-width:540px){ /* 모바일 */ 
@@ -81,5 +209,7 @@
   .main-visual .swiper-slide{
     height: 42rem;
   }
-
+  .examination-sec .examination-wrap .examination-item p{
+    font-size: 1.2rem;
+  }
 }

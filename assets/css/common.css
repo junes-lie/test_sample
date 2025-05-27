@@ -30,6 +30,17 @@ a{
   margin: 0 auto;
 }
 
+.container-wrap h2{
+  font-size: 4.2rem;
+  margin-bottom: 8rem;
+  text-align: center;
+}
+
+.container-wrap span{
+  font-weight: 400;
+}
+
+
 /* header */
 
 .nav{
@@ -116,9 +127,6 @@ a{
 .megamenu-bg.active{
   height: 32rem;
 }
-
-
-
 
 .ghost{
   display: none;
