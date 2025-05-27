@@ -1,0 +1,171 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,html{
+  font-size: 10px;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+.container-wrap{
+  width: 100%;
+  max-width: 1484px;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.container-fluid{
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* header */
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.navi .gnb{
+  display: flex;
+  align-items: center;
+}
+
+.navi .gnb li{
+  padding: 0 0 0 1.2rem;
+}
+
+.navi .gnb li a.gnb-link{
+  font-size: 2rem;
+  width: 13rem;
+  height: 12rem;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.call{
+  display: flex;
+  align-items: center;
+}
+
+.call .call-text{
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.call .call-text li{
+  font-size: 1.3rem;
+}
+.call .call-text li.number{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.megamenu{
+  position: absolute;
+  z-index: 9;
+  top: 12rem;
+  padding: 0;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.megamenu li{
+  padding-left: 0;
+}
+.megamenu.active{
+  opacity: 1;
+}
+.megamenu li a{
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #666;
+  margin-bottom: 1.5rem;
+  height: inherit;
+}
+
+.megamenu-bg{
+  z-index: 7;
+  position: absolute;
+  left: 0;
+  top: 12rem;
+  height: 0;
+  width: 100%;
+  border-top: 1px solid #f7f7f7;
+  background: #fff;
+  /* background: #ccc; */
+
+  box-shadow: 0px 3px 5px 0px rgb(0 0 0/ 15%);
+  transition: all 0.5s;
+}
+
+.megamenu-bg.active{
+  height: 32rem;
+}
+
+
+
+
+.ghost{
+  display: none;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.ghost .button{
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+.ghost .button span{
+  width: 2.5rem;
+  height: 0.3rem;
+  border-radius: 0.5rem;
+  background: #000;
+  display: block;
+  margin-top: 0.5rem;
+  position: relative;
+}
+.ghost .button span:first-child{
+  margin-top: 0;
+}
+
+
+/* media Query */
+@media (max-width: 1260px){
+  header{
+    padding: 1.8rem 0;
+  }
+  .navi{
+    display: none;
+  }
+  .ghost{
+    display: block;
+  }
+  .m-menu{
+    display: flex;
+    align-items: center;
+  }
+  .call{
+    margin-right: 4rem;
+  }
+}
+
+
+
+
+

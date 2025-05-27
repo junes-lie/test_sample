@@ -3,15 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>포트폴리오 - 병원</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-  <h1>
-    깃허브 테스트
-    저는 누구누구입니다
-  </h1>
-  <p>저는 이거 수정함</p>
-  <span>이것도 수정!함</span>
-  
+  <header>
+    <div class="container-wrap">
+      <div class="nav">
+        <div class="logo">
+          <a href="#">
+            <img src="assets/images/logo.png" alt="로고이미지">
+          </a>
+        </div>
+        <div class="navi">
+          <ul class="gnb">
+            <li>
+              <a class="gnb-link" href="#">병원소개</a>
+              <ul class="megamenu">
+                <li><a class="nav-link" href="#">병원소개</a></li>
+                <li><a class="nav-link" href="#">병원둘러보기</a></li>
+                <li><a class="nav-link" href="#">오시는길</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="gnb-link" href="#">진료안내</a>
+              <ul class="megamenu">
+                <li><a class="nav-link" href="#">진료안내</a></li>
+                <li><a class="nav-link" href="#">비급여항목안내</a></li>
+                <li><a class="nav-link" href="#">환자의 권리와 의무</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="gnb-link" href="#">영상의학과</a>
+              <ul class="megamenu">
+                <li><a class="nav-link" href="#">영상의학과</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="gnb-link" href="#">첨단장비소개</a>
+              <ul class="megamenu">
+                <li><a class="nav-link" href="#">첨단장비소개</a></li>
+                <li><a class="nav-link" href="#">의료장비 - MRI</a></li>
+                <li><a class="nav-link" href="#">의료장비 - CT</a></li>
+                <li><a class="nav-link" href="#">의료장비 - X-ray</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="gnb-link" href="#">커뮤니티</a>
+              <ul class="megamenu">
+                <li><a class="nav-link" href="#">언론보도</a></li>
+                <li><a class="nav-link" href="#">빠른상담</a></li>
+                <li><a class="nav-link" href="#">고객센터</a></li>
+              </ul>
+            </li>
+            <div class="megamenu-bg"></div>
+          </ul>
+        </div>
+        <div class="m-menu">
+          <div class="call">
+            <img src="assets/images/ico_call.png" alt="전화문의 아이콘">
+            <div class="call-text">
+              <ul>
+                <li>상담 및 예약문의</li>
+                <li class="number">062-223-1277</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ghost">
+            <div class="button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </header>
+
+  <main>
+    <section class="main-visual">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="assets/images/main-banner.png" alt="메인배너 이미지">
+            <div class="visual-title">
+              <h2>고품질의 최신식 장비</h2>
+              <p>최신식 장비를 갖춘 최고의 원격서비스를 제공</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/main-banner02.png" alt="메인배너 이미지">
+            <div class="visual-title">
+              <h2>고품질의 최신식 장비</h2>
+              <p>최신식 장비를 갖춘 최고의 원격서비스를 제공</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/main-banner03.png" alt="메인배너 이미지">
+            <div class="visual-title">
+              <h2>고품질의 최신식 장비</h2>
+              <p>최신식 장비를 갖춘 최고의 원격서비스를 제공</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/js/jquery-3.2.1.slim.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {});
+    var swiper2 = new Swiper(".mySwiper02", {});
+  </script>
 </body>
 </html>
