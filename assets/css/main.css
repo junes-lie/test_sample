@@ -2,7 +2,6 @@
   width: 100%;
   height: 100%;
 }
-
 .swiper-slide{
   text-align: center;
   font-size: 1.8rem;
@@ -12,14 +11,12 @@
   align-items: center;
   position: relative;
 }
-
 .swiper-slide img{
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .swiper-slide .visual-title{
   position: absolute;
   top: 38%;
@@ -27,48 +24,41 @@
   width: 100%;
   color: #fff;
 }
-
 .swiper-slide .visual-title h2{
   font-size: 6rem;
   margin-bottom: 2rem;
 }
-
 .swiper-slide .visual-title p{
   font-size: 2.4rem;
 }
-
 .main-visual .swiper-slide img{
   min-height: 64rem;
 }
 
 /* 최신식 장비 둘러보기 */
 /* .equipment-sec */
-
 .swiper02{
   overflow: hidden;
 }
-
 .equipment-sec{
   padding: 8rem 0;
   position: relative; /* 위치 잡아야 swiper-button-next나타남 */
 }
 .swiper-button-prev:after{
-    margin-left: 100px;
+  margin-left: 10rem;
 }
 .swiper-button-next:after {
-  margin-right: 100px;
+  margin-right: 10rem;
 }
   
 .equipment-sec .container-wrap{
   overflow: hidden;
 }
-  
-.equipment-sec .container-wrap h3{
+.equipment-sec .equipment-desc h3{
   font-size: 2.4rem;
   margin: 2rem 0 1rem;
 }
-
-.equipment-sec .container-wrap p{
+.equipment-sec .equipment-desc p{
   font-size: 1.8rem;
 }
 
@@ -80,7 +70,6 @@
 .examination-sec{
   padding: 8rem 0;
 }
-
 .examination-sec .examination-wrap{
   display: flex;
   flex-wrap: wrap;
@@ -97,7 +86,7 @@
 .examination-sec .examination-wrap .examination-item p{
   font-size: 2rem;
 }
-  
+
 .examination-sec .examination-wrap .examination-item .ev_hover{
   display: none;
 }
@@ -122,6 +111,9 @@
   padding-left: 10rem;
 }
 .tour-sec .tour-wrap h2{
+  font-size: 4.2rem;
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
   position: relative;
 }
 .tour-sec .tour-wrap h2::after{
@@ -138,16 +130,13 @@
   display: inline-block;
   margin-bottom: 1rem;
 }
-
 .tour-sec .tour-wrap p{
   font-size: 2rem;
   margin-bottom: 8rem;
 }
-
 .tour-sec .tour-wrap .btn{
   margin-bottom: 8rem;
 }
-
 .tour-swiper .swiper-slide img{
   max-height: 85rem;
 }
@@ -155,19 +144,90 @@
 .mySwiper3 .swiper-slide img{
   max-height: 10rem;
 }
-
 .mySwiper3 .swiper-slide{
   width: 25%;
   height: 100%;
   opacity: 0.4;
 }
-
 .mySwiper3 .swiper-slide-thumb-active{
   opacity: 1;
 }
 
+/* board-sec */
+.board-sec{
+  padding: 8rem 0;
+  background: #fbfcff;
+}
+.board-sec .board-wrap{
+  display: flex;
+  align-items: center;
+}
+.board-sec .board-wrap .inquiry,
+.board-sec .board-wrap .news{
+  width: 50%;
+}
+.board-sec .board-wrap .inquiry{
+  padding-right: 2rem;
+}
+.board-sec .board-wrap .news{
+  padding-left: 2rem;
+}
+.board-sec .board-wrap h3{
+  font-size: 2.4rem;
+}
+.board-sec .board-wrap p{
+  font-size: 1.6rem;
+  color: #666;
+}
+.board-sec .board-wrap .title-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.board-sec .board-wrap .board-list tr td{
+  font-size: 1.8rem;
+  padding: 1.2rem 0;
+  border-top: 1px solid #f1f1f1;
+}
+.board-sec .board-wrap .board-list tr td.point-color{
+  font-weight: bold;
+  color: #f05226;
+}
+.board-sec .board-wrap .board-list tr td:last-child{
+  font-size: 1.4rem;
+  text-align: right;
+}
+
+
+
 @media (max-width:1440px){ /* 노트북 */
   
+}
+@media (max-width:1200px){ 
+  .tour-swiper{
+    flex-direction: column-reverse;
+  }
+  .tour-swiper .swiper-slide img{
+    max-height: 50rem;
+    min-height: 50rem;
+  }
+  .tour-swiper .mySwiper4{
+    width: 100%;
+  }
+  .tour-swiper .tour-wrap{
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+  .tour-swiper .tour-wrap .swiper-wrapper{
+    display: none;
+  }
+  .tour-sec .tour-wrap h2::after{
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 @media (max-width:1024px){ 
   .main-visual .visual-title h2{
@@ -199,7 +259,6 @@
   .logo img{
     width: 12rem;
   }
-
   .main-visual .visual-title h2{
     font-size: 3.2rem;
   }

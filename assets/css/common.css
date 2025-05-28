@@ -17,6 +17,9 @@ a{
   text-decoration: none;
   color: #000;
 }
+table{
+  width: 100%;
+}
 
 .container-wrap{
   width: 100%;
@@ -24,7 +27,6 @@ a{
   margin: 0 auto;
   padding: 0 3.2rem;
 }
-
 .container-fluid{
   width: 100%;
   margin: 0 auto;
@@ -35,30 +37,25 @@ a{
   margin-bottom: 8rem;
   text-align: center;
 }
-
 .container-wrap span{
   font-weight: 400;
 }
 
 
 /* header */
-
 .nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
 }
-
 .navi .gnb{
   display: flex;
   align-items: center;
 }
-
 .navi .gnb li{
   padding: 0 0 0 1.2rem;
 }
-
 .navi .gnb li a.gnb-link{
   font-size: 2rem;
   width: 13rem;
@@ -72,13 +69,11 @@ a{
   display: flex;
   align-items: center;
 }
-
 .call .call-text{
   display: flex;
   align-items: center;
   margin-left: 1rem;
 }
-
 .call .call-text li{
   font-size: 1.3rem;
 }
@@ -108,7 +103,6 @@ a{
   margin-bottom: 1.5rem;
   height: inherit;
 }
-
 .megamenu-bg{
   z-index: 7;
   position: absolute;
@@ -119,11 +113,9 @@ a{
   border-top: 1px solid #f7f7f7;
   background: #fff;
   /* background: #ccc; */
-
   box-shadow: 0px 3px 5px 0px rgb(0 0 0/ 15%);
   transition: all 0.5s;
 }
-
 .megamenu-bg.active{
   height: 32rem;
 }
@@ -138,7 +130,6 @@ a{
   border: none;
   background: transparent;
 }
-
 .ghost .button span{
   width: 2.5rem;
   height: 0.3rem;
@@ -150,6 +141,47 @@ a{
 }
 .ghost .button span:first-child{
   margin-top: 0;
+}
+
+
+/* Footer */
+.footer-wrap{
+  color: #a4a4a4;
+  text-align: center;
+  padding: 4rem 0;
+  border-top: 1px solid #ccc;
+  font-size: 1.6rem;
+}
+.footer-wrap ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer-wrap a{
+  color: #a4a4a4;
+}
+.footer-wrap ul.footer-info{
+  margin-bottom: 3rem;
+}
+.footer-wrap ul li{
+  padding-right: 1rem;
+  margin-right: 1rem;
+  position: relative;
+}
+.footer-wrap ul li::after{
+  content: '';
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 1rem;
+  background: #a4a4a4;
+}
+.footer-wrap ul li:last-child::after{
+  display: none;
 }
 
 
